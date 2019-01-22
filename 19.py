@@ -97,10 +97,6 @@ ops = {'addr': addr,'addi':addi,'mulr':mulr,'muli':muli,'banr':banr,'bani':bani,
 
 ip = 0
 register = [0, 0, 0, 0, 0, 0]
-#register = [0, 10551383, 1, 0, 10549998, 6]
-#register = [1, 10551383, 2, 0, 10498615, 11]
-#register = [1, 10551383, 3, 0, 10497231, 6]
-#register = [1, 10551383, 4, 0, 10545848, 11]
 
 i = 0
 
@@ -113,8 +109,5 @@ while ip < len(instructions):
     i += 1
     if i%100000 == 0:
         print(register)
-
-
-
 
 print(register[0], i)
